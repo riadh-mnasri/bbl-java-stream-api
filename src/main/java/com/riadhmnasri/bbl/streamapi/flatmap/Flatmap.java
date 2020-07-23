@@ -1,5 +1,6 @@
 package com.riadhmnasri.bbl.streamapi.flatmap;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,11 +18,13 @@ public class Flatmap {
                 List.of(new Language("Scala"), new Language("Python")))
         );
 
-        List<String> teamLanguages = developers.stream().
-            map(d -> d.getLanguages()).
-            flatMap(l -> l.stream()).
-            map(l -> l.getName()).
-            collect(Collectors.toList());
+        List<String> teamLanguages = developers.stream()
+            .map(Developer::getLanguages)
+            .flatMap(Collection::stream)
+            .map(Language::getName)
+            .map(String::toUpperCase)
+            .distinct()
+            .collect(Collectors.toList());
 
         System.out.println(teamLanguages);
     }
