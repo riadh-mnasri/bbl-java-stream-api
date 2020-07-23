@@ -4,6 +4,7 @@ public class Person {
 
     private String name;
     private String city;
+    private Integer age;
 
     @Override
     public String toString() {
@@ -12,9 +13,10 @@ public class Person {
             '}';
     }
 
-    public Person(String name, String city) {
+    public Person(String name, String city, Integer age) {
         this.name = name;
         this.city = city;
+        this.age = age;
     }
 
     public String getName() {
@@ -23,5 +25,9 @@ public class Person {
 
     public String getCity() {
         return city;
+    }
+
+    public Integer getAge() {
+        return age;
     }
 }
