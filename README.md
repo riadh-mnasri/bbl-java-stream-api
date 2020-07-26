@@ -9,7 +9,7 @@
 8. Average
 9. Statistics
 10. Reducing
-11. grouping
-12. partitiong
+11. Grouping
+12. Partitioning
 
 

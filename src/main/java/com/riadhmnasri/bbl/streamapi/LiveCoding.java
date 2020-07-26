@@ -104,13 +104,13 @@ public class LiveCoding {
             .reduce((n1, n2) -> n1 + "#" + n2);
         personsNames.ifPresent(System.out::println);
 
-        // 11. grouping
+        // 11. Grouping
         // Show the number of persons by city
         Map<String, Long> numberOfpersonsByCity = persons.stream()
             .collect(Collectors.groupingBy(p -> p.getCity(), Collectors.counting()));
         System.out.println(numberOfpersonsByCity);
 
-        // 12. partitiong
+        // 12. Partitioning
         // partition the persons by the legal age
         Map<Boolean, List<Person>> partitions = persons.stream()
                                                         .collect(Collectors.partitioningBy(p -> p.getAge() >= 18));
