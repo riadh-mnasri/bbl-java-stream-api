@@ -49,7 +49,6 @@ public class LiveCoding {
         );
 
         // Show team languages without duplicate and written in uppercase
-
         List<String> teamLanguages = developers.stream()
             .flatMap(d -> d.getLanguages().stream())
             .map(l -> l.getName())
