@@ -1,4 +1,4 @@
-package com.riadhmnasri.bbl.streamapi.flatmap;
+package com.riadhmnasri.bbl.streamapi.model;
 
 public class Language {
     private String name;

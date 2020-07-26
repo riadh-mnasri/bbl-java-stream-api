@@ -1,4 +1,4 @@
-package com.riadhmnasri.bbl.streamapi;
+package com.riadhmnasri.bbl.streamapi.model;
 
 public class Person {
 

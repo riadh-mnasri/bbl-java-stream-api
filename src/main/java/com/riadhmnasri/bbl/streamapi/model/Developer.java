@@ -1,4 +1,4 @@
-package com.riadhmnasri.bbl.streamapi.flatmap;
+package com.riadhmnasri.bbl.streamapi.model;
 
 import java.util.List;
 
